@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1604158396 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/main.c
+	<stdio.h>
+	<stdlib.h>
+	"stpoke.h"
+
+1604149136 /home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	"tipos.h"
+	"movimiento.h"
+
+1604152382 /home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1604158404 /home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1604158489 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/movimiento.c
+	"movimiento.h"
+
+1604101640 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/stpoke.c
+	"stpoke.h"
+
+1604154667 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/tipos.c
+	"tipos.h"
+

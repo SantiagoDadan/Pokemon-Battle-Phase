@@ -62,7 +62,7 @@ int main()
     }
 
   } while ( opcion );
-  
+
   return 0;
 }
 
@@ -98,8 +98,8 @@ void menuMovimientosPorTipo() {
   printf("1- Acero\n");
   printf("2- Agua\n");
   printf("3- Bicho\n");
-  printf("4- Dragón\n");
-  printf("5- Eléctrico\n");
+  printf("4- Dragon\n");
+  printf("5- Electrico\n");
   printf("6- Fantasma\n");
   printf("7- Fuego\n");
   printf("8- Hada\n");
@@ -107,7 +107,7 @@ void menuMovimientosPorTipo() {
   printf("10- Lucha\n");
   printf("11- Normal\n");
   printf("12- Planta\n");
-  printf("13- Psíquico\n");
+  printf("13- Psiquico\n");
   printf("14- Roca\n");
   printf("15- Siniestro\n");
   printf("16- Tierra\n");
@@ -116,5 +116,5 @@ void menuMovimientosPorTipo() {
 
   printf("\n19 - Mostrar todos\n");
 
-  printf("\n20 - Volver atrás\n");
+  printf("\n20 - Volver atras\n");
 }

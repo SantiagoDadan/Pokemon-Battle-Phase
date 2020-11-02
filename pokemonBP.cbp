@@ -34,6 +34,18 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="movimiento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="movimiento.h" />
+		<Unit filename="stpoke.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stpoke.h" />
+		<Unit filename="tipos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tipos.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

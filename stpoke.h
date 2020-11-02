@@ -68,4 +68,4 @@ nodoGeneracion* cargarListaDeGeneraciones( char archivoGeneraciones[MAX_LENGTH] 
 void obtenerConducta( char conducta[MAX_LENGTH] );
 void pokemonAtaca( pokemonDeJugador atacante, pokemonDeJugador receptor, int usaAtaqueEspecial );
 int calcularEficienciaDelAtaque( int idTipoDelAtaque, int idTiposDelPokemonDefensor[2] );
-int calcularDañoRealizado( int poderDelAtaque, int eficienciaDelAtaque, int defensaDefensor ); // Incompleto, falta resolver la formula a utilizar
+int calcularDanioRealizado( int poderDelAtaque, int eficienciaDelAtaque, int defensaDefensor ); // Incompleto, falta resolver la formula a utilizar
