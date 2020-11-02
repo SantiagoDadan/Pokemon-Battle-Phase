@@ -52,7 +52,7 @@ int main()
         else if ( opcion == 2 ) {
           limpiarPantalla();
           mostrarTipos( listaDeTipos );
-          creacionDeNuevoMovimiento();
+          arbolDeMovimientos = creacionDeNuevoMovimiento( arbolDeMovimientos );
         }
 
         break;
@@ -80,7 +80,7 @@ void tomarOpcion( int* opcion ) {
 
 void menuMovimientos() {
   printf("1- Mostrar Movimientos\n");
-  printf("2- Agregar Movimiento Nuevo (Necesita reiniciar para tomar efecto)\n");
+  printf("2- Agregar Movimiento Nuevo\n");
   printf("\n9- Salir\n");
 }
 

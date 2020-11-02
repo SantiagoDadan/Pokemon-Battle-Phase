@@ -86,12 +86,36 @@ void mostrarMovimientos( movimientoNodo* arbol ) {
   }
 }
 
+int estaElMovimientoEnArchivo( char* nombreArchivo, int id ) {
+  int encontrado = 0;
+  stMovimiento aux;
+  FILE* archivo = fopen( nombreArchivo, "rb" );
+  
+  if(!archivo) {
+    archivo = fopen( nombreArchivo, "wb" );
+  } else {
+    while( fread(&aux, sizeof(stMovimiento), 1, archivo) ) {
+      if( aux.id == id ) {
+        encontrado = 1;
+      }
+    }
+  }
+
+  fclose( archivo );
+
+  return encontrado;
+}
+
 stMovimiento crearMovimiento() {
   stMovimiento nuevoMovimiento;
   
-  printf("\n\nID: ");
-  scanf("%d", &nuevoMovimiento.id);
-  while( getchar() != '\n' );
+  do {
+    printf("\n\nID: ");
+    scanf("%d", &nuevoMovimiento.id);
+    while( getchar() != '\n' );
+
+  } while( estaElMovimientoEnArchivo( ARCHIVO_MOVIMIENTOS, nuevoMovimiento.id ) );
+
   printf("Nombre: ");
   fgets(nuevoMovimiento.nombre, MAX_LENGTH, stdin);
   nuevoMovimiento.nombre[strlen(nuevoMovimiento.nombre)-1] = 0;
@@ -105,8 +129,11 @@ stMovimiento crearMovimiento() {
   return nuevoMovimiento;
 }
 
-void creacionDeNuevoMovimiento() {
+movimientoNodo* creacionDeNuevoMovimiento( movimientoNodo* arbolDeMovimientos ) {
   stMovimiento nuevoMovimiento = crearMovimiento();
+
+  movimientoNodo* nuevoNodo = crearNodoMovimiento( nuevoMovimiento );
+  arbolDeMovimientos = agregarMovimientoAlArbol( arbolDeMovimientos, nuevoNodo );
 
   FILE* archivo = fopen( ARCHIVO_MOVIMIENTOS, "ab" );
 
@@ -115,6 +142,8 @@ void creacionDeNuevoMovimiento() {
   }
 
   fclose( archivo );
+
+  return arbolDeMovimientos;
 }
 
 void mostrarMovimientosPorTipo( movimientoNodo* arbolDeMovimientos, int tipoBuscado ) {

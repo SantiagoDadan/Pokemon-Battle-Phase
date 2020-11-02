@@ -29,5 +29,5 @@ void imprimirMovimiento( stMovimiento aMostrar );
 void imprimirMovimientoSinTipo( stMovimiento aMostrar );
 void mostrarMovimientos( movimientoNodo* arbol );
 stMovimiento crearMovimiento();
-void creacionDeNuevoMovimiento();
+movimientoNodo* creacionDeNuevoMovimiento( movimientoNodo* arbolDeMovimientos );
 void mostrarMovimientosPorTipo( movimientoNodo* arbolDeMovimientos, int tipoBuscado );
