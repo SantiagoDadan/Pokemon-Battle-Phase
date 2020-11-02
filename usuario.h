@@ -8,17 +8,11 @@
 
 typedef struct
 {
+    int categoria; /// 1 para usuario, 2 para admin.
     char nick[MAX_ARRAY];
     char contrasenia[MAX_ARRAY];
 
 }Usuario;
-
-typedef struct
-{
-    char nombre[MAX_ARRAY];
-    char contrasenia[MAX_ARRAY];
-
-}Admin;
 
 void pause();
 void menuPrincipal();
@@ -29,3 +23,8 @@ Usuario crearCuenta();
 int siOno();
 Usuario buscarUsuario(char aBuscar[]);
 void inicSesionUsuario();
+void inicSesionAdmin();
+Usuario cargarNuevoAdmin();
+void crearNuevaCuentaAdmin();
+void menuAdmin();
+void modificaciones();

@@ -15,7 +15,8 @@ void menuPrincipal()
 
     printf("\n\t1 - Iniciar sesion\n");
     printf("\t2 - Crear cuenta\n");
-    printf("\n\t3 - Iniciar secion como admin\n");
+    printf("\n\t3 - Iniciar sesion como admin\n");
+    printf("\t0 - Salir\n");
 
     scanf("%d", &opcion);
 
@@ -31,13 +32,13 @@ void menuPrincipal()
     case 2:
 
         nuevo = crearCuenta();
-        pausa();
+        pause();
         menuUsuario(nuevo);
         break;
 
     case 3:
 
-        /*inicSesionAdmin();*/
+        inicSesionAdmin();
         break;
 
     default:
@@ -55,21 +56,32 @@ void menuUsuario(Usuario jugador)
     printf("\t2 - Combate vs entrenador\n");
     printf("\t3 - Combate vs lider de GYM\n");
     printf("\t4 - Perfil de entrenador\n");
+    printf("\t0 - Salir\n");
 
     scanf("%d",&opcion);
 
     switch(opcion)
     {
     case 1:
+
         break;
+
     case 2:
+
         break;
+
     case 3:
+
         break;
+
     case 4:
+
         break;
+
     default:
+
         break;
+
     }
 }
 
@@ -78,6 +90,8 @@ Usuario cargarNuevoUsuario()
     Usuario aux;
 
     int control;
+
+    aux.categoria = 1;
 
     do
     {
@@ -209,7 +223,7 @@ void inicSesionUsuario()
 
     if(strcmpi(aux.contrasenia, login.contrasenia) == 0)
     {
-        menuUsuario(login);
+        menuUsuario(aux);
     }else
     {
         system("cls");
@@ -236,5 +250,149 @@ void inicSesionUsuario()
 
             break;
         }
+    }
+}
+
+void inicSesionAdmin()
+{
+    Usuario login, aux;
+
+    int control = 0;
+
+    printf("\nIngrese su Nick:\n\n\t>");
+    fflush(stdin);
+    gets(&login.nick);
+
+    printf("\nIngrese la contrasenia\n\n\t>");
+    fflush(stdin);
+    gets(&login.contrasenia);
+
+    aux = buscarUsuario(login.nick);
+
+    system("cls");
+
+    if(strcmpi(aux.contrasenia, login.contrasenia) == 0)
+    {
+        if(aux.categoria == 2)
+        {
+            menuAdmin(aux);
+        }else
+        {
+            printf("\nLa cuenta ingresada no es de categoria 'admin'.\n\n");
+        }
+
+    }else
+    {
+        printf("\nContrasenia incorrecta!\n\n");
+    }
+}
+
+Usuario cargarNuevoAdmin()
+{
+   Usuario aux;
+
+    int control;
+
+    aux.categoria = 2;
+
+    do
+    {
+        printf("\nIngrese su Nick:\n\n\t>");
+        fflush(stdin);
+        gets(&aux.nick);
+
+        control = controlarNick(aux.nick);
+
+        if(control == 1)
+        {
+            system("cls");
+            printf("\nNick en uso actualmente, intente con otro!\n");
+        }
+
+    }while(control == 1);
+
+    printf("\nIngrese la contrasenia\n\n\t>");
+    fflush(stdin);
+    gets(&aux.contrasenia);
+
+    return aux;
+}
+
+void crearNuevaCuentaAdmin()
+{
+    Usuario nuevo = cargarNuevoAdmin();
+
+    FILE * archi = fopen(ARCHIVO_USUARIO, "ab");
+
+    if(archi != NULL)
+    {
+        fwrite(&nuevo, sizeof(Usuario), 1, archi);
+
+        printf("\nAdmin cargado correctamente!!");
+
+        fclose(archi);
+    }
+
+    return nuevo;
+}
+
+void menuAdmin()
+{
+    int opcion;
+
+    printf("\n\t1 - Modificaciones\n");
+    printf("\t2 - Ingresar nuevo admin\n");
+    printf("\t0 - Salir\n");
+
+    scanf("%d", &opcion);
+
+    system("cls");
+
+    switch(opcion)
+    {
+    case 1:
+
+        modificaciones();
+        break;
+
+    case 2:
+
+        crearNuevaCuentaAdmin();
+        break;
+
+    default:
+
+        break;
+    }
+}
+
+void modificaciones()
+{
+    int opcion;
+
+    printf("\n\t1 - Agregar nueva generacion\n");
+    printf("\t2 - Agregar nuevo pokemon\n");
+    printf("\t3 - Modificar pokemon\n");
+    printf("\t0 - Salir\n");
+
+    scanf("%d", &opcion);
+
+    switch(opcion)
+    {
+    case 1:
+
+        break;
+
+    case 2:
+
+        break;
+
+    case 3:
+
+        break;
+
+    default:
+
+        break;
     }
 }

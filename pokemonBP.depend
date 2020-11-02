@@ -54,11 +54,17 @@
 	"tipos.h"
 	"movimiento.h"
 
-1604329528 source:c:\users\user\documents\github\pokemon-battle-phase\usuario.c
+1604345439 source:c:\users\user\documents\github\pokemon-battle-phase\usuario.c
 	"usuario.h"
 
-1604329527 c:\users\user\documents\github\pokemon-battle-phase\usuario.h
+1604345175 c:\users\user\documents\github\pokemon-battle-phase\usuario.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+
+1604345293 source:c:\users\user\documents\github\pokemon-battle-phase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stpoke.h"
+	"usuario.h"
 

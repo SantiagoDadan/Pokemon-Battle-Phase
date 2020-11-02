@@ -12,13 +12,14 @@ void menuMovimientosPorTipo();
 
 int main()
 {
+  menuPrincipal();
   tipoNodo* listaDeTipos = cargarTiposDesdeArchivo( ARCHIVO_TIPOS );
   movimientoNodo* arbolDeMovimientos = cargarMovimientosDesdeArchivo( ARCHIVO_MOVIMIENTOS );
 
   int opcion;
 
   do {
-    limpiarPantalla();
+    ///limpiarPantalla();
     mostrarMenu();
     tomarOpcion(&opcion);
 
