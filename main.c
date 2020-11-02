@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stpoke.h"
+#include "usuario.h"
 
 void limpiarPantalla();
 void pausa();

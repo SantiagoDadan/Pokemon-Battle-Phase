@@ -29,3 +29,36 @@
 1604154667 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/tipos.c
 	"tipos.h"
 
+1604158765 source:c:\users\user\documents\github\pokemon-battle-phase\tipos.c
+	"tipos.h"
+
+1604158765 c:\users\user\documents\github\pokemon-battle-phase\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1604326162 source:c:\users\user\documents\github\pokemon-battle-phase\movimiento.c
+	"movimiento.h"
+
+1604326162 c:\users\user\documents\github\pokemon-battle-phase\movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1604158765 source:c:\users\user\documents\github\pokemon-battle-phase\stpoke.c
+	"stpoke.h"
+
+1604326162 c:\users\user\documents\github\pokemon-battle-phase\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	"tipos.h"
+	"movimiento.h"
+
+1604329528 source:c:\users\user\documents\github\pokemon-battle-phase\usuario.c
+	"usuario.h"
+
+1604329527 c:\users\user\documents\github\pokemon-battle-phase\usuario.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

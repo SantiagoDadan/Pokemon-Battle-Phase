@@ -46,6 +46,14 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tipos.h" />
-		<Extensions />
+		<Unit filename="usuario.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="usuario.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
