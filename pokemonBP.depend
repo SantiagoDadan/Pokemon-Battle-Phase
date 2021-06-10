@@ -29,42 +29,525 @@
 1604154667 source:/home/scrapie/Documents/Estudio/Programacion II/pokemon-battle-phase/tipos.c
 	"tipos.h"
 
-1604158765 source:c:\users\user\documents\github\pokemon-battle-phase\tipos.c
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\tipos.c
 	"tipos.h"
 
-1604158765 c:\users\user\documents\github\pokemon-battle-phase\tipos.h
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\tipos.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1604326162 source:c:\users\user\documents\github\pokemon-battle-phase\movimiento.c
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\movimiento.c
 	"movimiento.h"
 
-1604326162 c:\users\user\documents\github\pokemon-battle-phase\movimiento.h
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\movimiento.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
+	"entsal.h"
 
-1604158765 source:c:\users\user\documents\github\pokemon-battle-phase\stpoke.c
+1605710914 source:c:\users\user\documents\github\pokemon-battle-phase\stpoke.c
 	"stpoke.h"
 
-1604326162 c:\users\user\documents\github\pokemon-battle-phase\stpoke.h
+1605710852 c:\users\user\documents\github\pokemon-battle-phase\stpoke.h
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	"gotoxy.h"
 	"tipos.h"
 	"movimiento.h"
+	"generacion.h"
 
-1604345439 source:c:\users\user\documents\github\pokemon-battle-phase\usuario.c
+1605711806 source:c:\users\user\documents\github\pokemon-battle-phase\usuario.c
 	"usuario.h"
 
-1604345175 c:\users\user\documents\github\pokemon-battle-phase\usuario.h
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\usuario.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+	"gimnasio.h"
+
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1604632951 source:c:\users\santi\documents\github\pokemon-battle-phase\entsal.c
+	"entsal.h"
+
+1604761950 c:\users\santi\documents\github\pokemon-battle-phase\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1604859061 source:c:\users\santi\documents\github\pokemon-battle-phase\generacion.c
+	"generacion.h"
+
+1604761950 c:\users\santi\documents\github\pokemon-battle-phase\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1604848527 c:\users\santi\documents\github\pokemon-battle-phase\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1604861561 source:c:\users\santi\documents\github\pokemon-battle-phase\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1604781378 c:\users\santi\documents\github\pokemon-battle-phase\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+
+1604761567 c:\users\santi\documents\github\pokemon-battle-phase\tipos.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 
-1604345293 source:c:\users\user\documents\github\pokemon-battle-phase\main.c
+1604761950 c:\users\santi\documents\github\pokemon-battle-phase\movimiento.h
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1604862844 c:\users\santi\documents\github\pokemon-battle-phase\usuario.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
 	"stpoke.h"
+
+1604781377 source:c:\users\santi\documents\github\pokemon-battle-phase\movimiento.c
+	"movimiento.h"
+
+1604848616 source:c:\users\santi\documents\github\pokemon-battle-phase\pokemon.c
+	"pokemon.h"
+
+1604781377 source:c:\users\santi\documents\github\pokemon-battle-phase\stpoke.c
+	"stpoke.h"
+
+1604863096 source:c:\users\santi\documents\github\pokemon-battle-phase\usuario.c
+	"usuario.h"
+	"pokemon.h"
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+	"stpoke.h"
+
+1604762141 source:c:\users\santi\documents\github\pokemon-battle-phase\tipos.c
+	"tipos.h"
+
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\entsal.c
+	"entsal.h"
+
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1605708226 source:c:\users\user\documents\github\pokemon-battle-phase\generacion.c
+	"generacion.h"
+
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\pokemon.c
+	"pokemon.h"
+
+1605705144 c:\users\user\documents\github\pokemon-battle-phase\gotoxy.h
+
+1605705144 source:c:\users\user\documents\github\pokemon-battle-phase\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\entsal.c
+	"entsal.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\generacion.c
+	"generacion.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1619062913 source:c:\users\user\desktop\pokemon-battle-phase-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1619063018 c:\users\user\desktop\pokemon-battle-phase-main\usuario.h
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"pokemon.h"
+	"stpoke.h"
+	"pokemon.h"
+	"stpoke.h"
+	"gimnasio.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"gotoxy.h"
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\gotoxy.h
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1605716628 c:\users\user\desktop\pokemon-battle-phase-main\gimnasio.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\movimiento.c
+	"movimiento.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\pokemon.c
+	"pokemon.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\stpoke.c
+	"stpoke.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\tipos.c
+	"tipos.h"
+
+1619063018 source:c:\users\user\desktop\pokemon-battle-phase-main\usuario.c
+	"usuario.h"
+
+1605713059 source:c:\users\user\documents\github\pokemon-battle-phase\gimnasio.c
+	"gimnasio.h"
+
+1605713874 c:\users\user\documents\github\pokemon-battle-phase\gimnasio.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+
+1605716628 source:c:\users\user\desktop\pokemon-battle-phase-main\gimnasio.c
+	"gimnasio.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\entsal.c
+	"entsal.h"
+
+1605716628 d:\pokemon-battle-phase-main\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1605716628 source:d:\pokemon-battle-phase-main\generacion.c
+	"generacion.h"
+
+1605716628 d:\pokemon-battle-phase-main\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1605716628 d:\pokemon-battle-phase-main\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\gimnasio.c
+	"gimnasio.h"
+
+1605716628 d:\pokemon-battle-phase-main\gimnasio.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+
+1605716628 d:\pokemon-battle-phase-main\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"gotoxy.h"
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+
+1605716628 d:\pokemon-battle-phase-main\gotoxy.h
+
+1605716628 d:\pokemon-battle-phase-main\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1605716628 d:\pokemon-battle-phase-main\movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1619062913 source:d:\pokemon-battle-phase-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1619063018 d:\pokemon-battle-phase-main\usuario.h
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"pokemon.h"
+	"stpoke.h"
+	"pokemon.h"
+	"stpoke.h"
+	"gimnasio.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\movimiento.c
+	"movimiento.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\pokemon.c
+	"pokemon.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\stpoke.c
+	"stpoke.h"
+
+1605716628 source:d:\pokemon-battle-phase-main\tipos.c
+	"tipos.h"
+
+1619063018 source:d:\pokemon-battle-phase-main\usuario.c
+	"usuario.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\entsal.c
+	"entsal.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\generacion.c
+	"generacion.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gimnasio.c
+	"gimnasio.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gimnasio.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"gotoxy.h"
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gotoxy.h
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1619063599 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1621434092 c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\usuario.h
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"pokemon.h"
+	"stpoke.h"
+	"pokemon.h"
+	"stpoke.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\movimiento.c
+	"movimiento.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\pokemon.c
+	"pokemon.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\stpoke.c
+	"stpoke.h"
+
+1619063599 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\tipos.c
+	"tipos.h"
+
+1621434495 source:c:\users\santi\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\usuario.c
+	"usuario.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\entsal.c
+	"entsal.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\entsal.h
+	<stdio.h>
+	<stdlib.h>
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\generacion.c
+	"generacion.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\generacion.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\pokemon.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gimnasio.c
+	"gimnasio.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gimnasio.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pokemon.h"
+	"stpoke.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\stpoke.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"gotoxy.h"
+	"tipos.h"
+	"movimiento.h"
+	"generacion.h"
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gotoxy.h
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\tipos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1619063599 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\movimiento.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"entsal.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\gotoxy.c
+	<stdio.h>
+	<stdlib.h>
+	<windows.h>
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	"usuario.h"
+
+1621434092 c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\usuario.h
+	<direct.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<windows.h>
+	"pokemon.h"
+	"stpoke.h"
+	"pokemon.h"
+	"stpoke.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\movimiento.c
+	"movimiento.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\pokemon.c
+	"pokemon.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\stpoke.c
+	"stpoke.h"
+
+1619063599 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\tipos.c
+	"tipos.h"
+
+1621434495 source:c:\users\user\desktop\t.p-final-pokemon-battle-phase-main\pokemon-battle-phase-main\usuario.c
 	"usuario.h"
 
