@@ -1,19 +1,16 @@
-#ifndef TIPOS_H_INCLUDED
-#define TIPOS_H_INCLUDED
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 #define MAX_LENGTH 20
-#define ARCHIVO_TIPOS "bin/tipos.bin"
+#define ARCHIVO_TIPOS "tipos.bin"
 
 typedef struct {
   int id;
   char nombre[MAX_LENGTH];
   int idDebilidades[ MAX_LENGTH ];
 
-}stTipo;
+} stTipo;
 
 typedef struct _tipoNodo {
   stTipo tipo;
@@ -32,5 +29,3 @@ void creacionDeNuevoTipo();
 float esDebilidad( stTipo tipoA, stTipo tipoB );
 float calcularEfectividadDelAtaque( tipoNodo* lista, int idTipoMovimiento, int idTipoDefensor1, int idTipoDefensor2 );
 stTipo crearTipo();
-
-#endif

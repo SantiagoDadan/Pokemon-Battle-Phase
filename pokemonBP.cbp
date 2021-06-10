@@ -31,22 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="entsal.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="entsal.h" />
-		<Unit filename="generacion.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="generacion.h" />
-		<Unit filename="gimnasio.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="gimnasio.h" />
-		<Unit filename="gotoxy.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="gotoxy.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -54,10 +38,6 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="movimiento.h" />
-		<Unit filename="pokemon.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="pokemon.h" />
 		<Unit filename="stpoke.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -70,6 +50,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="usuario.h" />
-		<Extensions />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

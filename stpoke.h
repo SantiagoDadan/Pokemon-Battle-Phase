@@ -1,22 +1,19 @@
-#ifndef STPOKE_H_INCLUDED
-#define STPOKE_H_INCLUDED
-
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include "gotoxy.h"
 
 #include "tipos.h"
 #include "movimiento.h"
-#include "generacion.h"
 
-enum enGenero { masculino = 0, femenino = 1 };
+#define MAX_LENGTH 20
+
+enum enGenero { femenino = 1, masculino = 2 };
 
 typedef struct {
   int idPokedex;
   char nombre[ MAX_LENGTH ];
   char apodo[ MAX_LENGTH ]; // Nombre elegido por el entrenador
   int genero; // femenino o masculino
+
   int idTipo[2]; // -1 en el segundo tipo si no lo tiene
 
   int estadSalud;
@@ -29,28 +26,46 @@ typedef struct {
   int experienceObtenida;
 } pokemonDeJugador;
 
-void obtenerNaturaleza( pokemonDeJugador* nuevoPoke );
-void obtenerGenero( pokemonDeJugador* nuevoPoke );
-void obtenerSetMovimientos( pokemonDeJugador* nuevoPoke, modeloDePokemon base );
-pokemonDeJugador crearPokemonDeJugador( nodoGeneracion* lista, int idPokedex );
-int pelear(pokemonDeJugador poke1, pokemonDeJugador poke2, tipoNodo *listaTipos, movimientoNodo *arbolMoviminetos, nodoGeneracion* listaGen, int* ganador);
-int calcularTurno(pokemonDeJugador poke1, pokemonDeJugador poke2);
-int ataqueEnemigo(pokemonDeJugador atacante, pokemonDeJugador receptor, tipoNodo *listaTipos, movimientoNodo *arbolMoviminetos);
-int realizarAtaque(pokemonDeJugador atacante, pokemonDeJugador receptor, tipoNodo *listaTipos, movimientoNodo *arbolMoviminetos);
-int elegirMovimiento(pokemonDeJugador atacante, movimientoNodo *arbolMoviminetos );
-int pokemonAtaca(pokemonDeJugador atacante, pokemonDeJugador receptor, int idMovimiento, tipoNodo *listaTipos, movimientoNodo *arbolMoviminetos);
-int pokemonRandom(nodoGeneracion * lista);
-char* devolverTipo(pokemonDeJugador aux, int nroTipo);
-int calcularTotalStats( pokemonDeJugador poke ); // No usar directamente, llamada en sumarExperienciaAPokemon
-int estadisticaSubir( pokemonDeJugador poke, int totalEstadisticas ); // No usar directamente, llamada en sumarExperienciaAPokemon
-void sumarExperienciaAPokemon( pokemonDeJugador* poke, int experiencia );
-void evolucionarPokemon( nodoGeneracion* listaGen, pokemonDeJugador* poke );
-int hayEvolucion( nodoGeneracion* listaGen, pokemonDeJugador* poke );
-int calcularExperienciaRecompensa( pokemonDeJugador pokemonAdversario, int resultadoDelCombate );
-int lanzarPokeball(pokemonDeJugador pokeSalvajed);
-void imprimirPokemonSalvaje(pokemonDeJugador aux, int saludBase, int saludActual);
-float calcularPromedioStats(pokemonDeJugador pokemon);
-pokemonDeJugador elegirDificultatCapturarPokemon(nodoGeneracion * lista);
-int pelearXvX(pokemonDeJugador pokesElegidos[], pokemonDeJugador contrincante[], int cantPokes, tipoNodo *listaTipos, movimientoNodo *arbolMoviminetos, nodoGeneracion *listaGen, int ganador);
+typedef struct {
+  int idPokedex;
+  char nombre[ MAX_LENGTH ];
+  int idTipo[2]; // -1 en el segundo tipo si no lo tiene
 
-#endif // STPOKE_H_INCLUDED
+  int estadSalud;
+  int estadAtaque;
+  int estadDefensa;
+  int estadVelocidad;
+
+  int idSiguienteEvolucion; // -1 si no tiene
+  int idMovimientosAptos[MAX_LENGTH];
+} modeloDePokemon;
+
+typedef struct _nodoRegistroPokemon {
+  modeloDePokemon pokemonBase;
+
+  struct _nodoRegistroPokemon* izquieda;
+  struct _nodoRegistroPokemon* derecha;
+} nodoRegistroPokemon;
+
+typedef struct {
+  int numeroDeGeneracion;
+  int primerNumeroEnPokedex; // Tiene que ser igual al numero de la anterior + cantidad del anterior
+  int cantidadDePokemons;
+} stGeneracion;
+
+typedef struct _nodoGeneracion {
+  stGeneracion generacion;
+  nodoRegistroPokemon* arbolPokemons;
+
+  struct _nodoGeneracion* anterior;
+  struct _nodoGeneracion* siguiente;
+} nodoGeneracion; // Lista doblemente vinculada
+
+void crearNuevaGeneracion( char archivoGeneraciones, nodoGeneracion* listaGeneraciones, char nombreNuevaGeneracion[MAX_LENGTH] );
+void crearNuevoPokemon( char nombreDeGeneracion[MAX_LENGTH] );
+nodoRegistroPokemon* cargarPokemonsEnGeneracion( char archivoGeneracion[MAX_LENGTH], nodoGeneracion* generacion );
+nodoGeneracion* cargarListaDeGeneraciones( char archivoGeneraciones[MAX_LENGTH] );
+void obtenerConducta( char conducta[MAX_LENGTH] );
+void pokemonAtaca( pokemonDeJugador atacante, pokemonDeJugador receptor, int usaAtaqueEspecial );
+int calcularEficienciaDelAtaque( int idTipoDelAtaque, int idTiposDelPokemonDefensor[2] );
+int calcularDanioRealizado( int poderDelAtaque, int eficienciaDelAtaque, int defensaDefensor ); // Incompleto, falta resolver la formula a utilizar
