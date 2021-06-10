@@ -1,9 +1,14 @@
+#ifndef MOVIMIENTO_H_INCLUDED
+#define MOVIMIENTO_H_INCLUDED
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+#include "entsal.h"
+
 #define MAX_LENGTH 20
-#define ARCHIVO_MOVIMIENTOS "movimientos.bin"
+#define ARCHIVO_MOVIMIENTOS "bin/movimientos.bin"
 
 typedef struct {
   int id;
@@ -31,3 +36,13 @@ void mostrarMovimientos( movimientoNodo* arbol );
 stMovimiento crearMovimiento();
 movimientoNodo* creacionDeNuevoMovimiento( movimientoNodo* arbolDeMovimientos );
 void mostrarMovimientosPorTipo( movimientoNodo* arbolDeMovimientos, int tipoBuscado );
+void encabezadoDeMostrarMovimientos();
+void encabezadoDeMostrarMovimientosPorTipo();
+movimientoNodo* mayorNodoPorId( movimientoNodo* arbol );
+movimientoNodo* quitarMovimientoDeArbol ( movimientoNodo* arbol, int idEliminar );
+void borrarMovimientoDeBinario( int idMovimiento );
+movimientoNodo* borradoDeMovimiento( movimientoNodo* arbol );
+int obtenerPoder(movimientoNodo* arbol, int idMovimiento);
+char* mostrarMovimientoPelea(movimientoNodo * arbolMovimientos, int idBuscar);
+
+#endif // MOVIMIENTO_H_INCLUDED
